@@ -16,7 +16,7 @@ public class FeedbackController {
 	FeedbackServ feedbackServ;
 	
 	@PostMapping("/add-feedback")
-	public String addFeedback(@RequestBody Feedback feedback) {
+	public String addFeedback(Feedback feedback) {
 		feedbackServ.saveFeedBack(feedback);
 		
 		
